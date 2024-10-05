@@ -25,7 +25,16 @@ vim.opt.sidescroll = 1
 vim.opt.sidescrolloff = 16
 
 -- characters to use for the status line, folds and filler lines
-vim.opt.fillchars = { diff = "╱", eob = " ", fold = " ", foldclose = "", foldopen = "", foldsep = " ", msgsep = "‾", vert = "│" }
+vim.opt.fillchars = {
+  diff = "╱",
+  eob = " ",
+  fold = " ",
+  foldclose = "",
+  foldopen = "",
+  foldsep = " ",
+  msgsep = "‾",
+  vert = "│"
+}
 
 -- number of lines used for the command-line
 vim.opt.cmdheight = 1
