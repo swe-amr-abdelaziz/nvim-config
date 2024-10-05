@@ -23,3 +23,6 @@ vim.opt.ignorecase = true
 
 -- override 'ignorecase' when pattern has upper case characters
 vim.opt.smartcase = true
+
+-- show live feedback during a substitution in progress
+vim.opt.inccommand = "split"
