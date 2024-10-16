@@ -33,7 +33,7 @@ vim.opt.termguicolors = true
 vim.opt.cursorline = true
 
 -- specifies which area 'cursorline' highlights
-vim.opt.cursorlineopt = "number"
+vim.opt.cursorlineopt = "both"
 
 -- highlight spelling mistakes
 vim.opt.spell = false

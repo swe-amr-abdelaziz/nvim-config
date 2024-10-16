@@ -1,5 +1,8 @@
 ---- messages and info ----
 
+-- disable nvim intro
+vim.opt.shortmess:append("csI")
+
 -- don't show the command in the last line
 vim.opt.showcmd = false
 

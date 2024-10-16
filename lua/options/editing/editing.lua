@@ -7,7 +7,7 @@ vim.opt.undofile = true
 vim.opt.formatoptions:append("mM")
 
 -- better completion experience
-vim.opt.completeopt = { "menu", "menuone", "noselect", "preview" }
+vim.opt.completeopt = { "menu", "menuone", "noinsert", "noselect", "preview" }
 
 -- maximum height of the popup menu
 vim.opt.pumheight = 10

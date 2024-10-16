@@ -49,7 +49,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 
 -- number of columns to use for the line number
-vim.opt.numberwidth = 4
+vim.opt.numberwidth = 2
 
 -- concealable text is visible in markdown files
 vim.opt.conceallevel = 0

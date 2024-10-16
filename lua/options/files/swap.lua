@@ -3,5 +3,5 @@
 -- use a swap file for this buffer
 vim.opt.swapfile = false
 
--- used for CursorHold event (for document highlighting detection)
+-- interval for writing swap file to disk, also used by gitsigns
 vim.opt.updatetime = 100

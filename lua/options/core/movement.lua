@@ -1,7 +1,7 @@
 ---- moving around, searching and patterns ----
 
--- allow arrow keys and Backspace/Space to wrap across line boundaries
-vim.opt.whichwrap = "b,s,<,>,[,]"
+-- go to previous/next line with backspace/space, h/l ,arrow keys
+vim.opt.whichwrap = "bs<>[]hl"
 
 -- commands like G, H, L will keep the cursor in the same column as before
 vim.opt.startofline = false
