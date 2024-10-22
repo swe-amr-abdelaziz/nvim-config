@@ -40,7 +40,7 @@ vim.opt.fillchars = {
 vim.opt.cmdheight = 1
 
 -- useful when executing macros.
-vim.opt.lazyredraw = true
+vim.opt.lazyredraw = false
 
 -- show the line number for each line
 vim.opt.number = true
