@@ -2,12 +2,12 @@
 
 -- list of patterns to ignore files for file name completion
 vim.opt.wildignore:append {
-  '*/.git/*',
-  '*/.svn*',
-  '*/__pycache__/*',
-  '*/build/*',
-  '*/dist/*',
-  '*/node_modules/*'
+  "*/.git/*",
+  "*/.svn*",
+  "*/__pycache__/*",
+  "*/build/*",
+  "*/dist/*",
+  "*/node_modules/*"
 }
 
 -- ignore case when using file names
