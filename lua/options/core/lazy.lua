@@ -22,7 +22,7 @@ require("options.editing.mapping")
 require("lazy").setup({
   spec = require("utils.general").lazy_imports_recursively("plugins"),
   install = {
-    colorscheme = { "habamax" },
+    colorscheme = { "dracula", "retrobox" },
   },
   checker = {
     enabled = true,
