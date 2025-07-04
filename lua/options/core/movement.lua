@@ -24,5 +24,8 @@ vim.opt.ignorecase = true
 -- override 'ignorecase' when pattern has upper case characters
 vim.opt.smartcase = true
 
+-- maximum amount of memory in Kbyte used for pattern matching
+vim.opt.maxmempattern	= 2000
+
 -- show live feedback during a substitution in progress
 vim.opt.inccommand = "split"
