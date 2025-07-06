@@ -29,14 +29,17 @@ vim.opt.hlsearch = true
 -- enable true color support
 vim.opt.termguicolors = true
 
+-- highlight the screen column of the cursor
+vim.opt.cursorcolumn = false
+
 -- highlight the screen line of the cursor
 vim.opt.cursorline = true
 
 -- specifies which area 'cursorline' highlights
-vim.opt.cursorlineopt = "both"
+vim.opt.cursorlineopt = "number"
 
 -- highlight spelling mistakes
 vim.opt.spell = false
 
 -- list of accepted languages
-vim.opt.spelllang = { "en" }
+vim.opt.spelllang = { "en", "ar" }
