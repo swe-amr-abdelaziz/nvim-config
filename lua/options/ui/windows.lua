@@ -3,11 +3,23 @@
 -- always display a global status line
 vim.opt.laststatus = 3
 
--- get help height from the equalalways option
+-- make all windows the same size when adding/removing windows
+vim.opt.equalalways = false
+
+-- keep the height of the window
+vim.opt.winfixheight = true
+
+-- keep the width of the window
+vim.opt.winfixwidth = true
+
+-- initial height of the help window
 vim.opt.helpheight = 0
 
 -- don't unload a buffer when no longer shown in a window
 vim.opt.hidden = true
+
+-- which window to use when jumping to a buffer
+vim.opt.switchbuf = { "useopen", "usetab", "uselast" }
 
 -- a new window is put below the current one
 vim.opt.splitbelow = true
