@@ -3,6 +3,9 @@
 -- persistent undo even after you close a file and re-open it
 vim.opt.undofile = true
 
+-- specifies what <BS>, CTRL-W, etc. can do in Insert mode
+vim.opt.backspace = { "start", "eol", "indent" }
+
 -- correctly break multi-byte characters such as CJK
 vim.opt.formatoptions:append("mM")
 

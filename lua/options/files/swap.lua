@@ -4,4 +4,4 @@
 vim.opt.swapfile = false
 
 -- interval for writing swap file to disk, also used by gitsigns
-vim.opt.updatetime = 100
+vim.opt.updatetime = 50
