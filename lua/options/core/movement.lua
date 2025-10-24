@@ -1,7 +1,7 @@
 ---- moving around, searching and patterns ----
 
--- go to previous/next line with backspace/space, h/l ,arrow keys
-vim.opt.whichwrap = "bs<>[]hl"
+-- go to previous/next line with backspace/space, arrow keys
+vim.opt.whichwrap = "bs<>[]"
 
 -- commands like G, H, L will keep the cursor in the same column as before
 vim.opt.startofline = false
@@ -25,7 +25,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- maximum amount of memory in Kbyte used for pattern matching
-vim.opt.maxmempattern	= 2000
+vim.opt.maxmempattern = 2000
 
 -- show live feedback during a substitution in progress
 vim.opt.inccommand = "split"
