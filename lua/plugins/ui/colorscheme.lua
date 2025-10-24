@@ -8,12 +8,12 @@ return {
 
     palette.bglighter = { "#2C2D35", 236 }
     palette.bglight   = { "#23252F", 235 }
-    palette.bg        = { "#1A1B23", 234 }
+    palette.bg        = { "#1E1F29", 234 }
     palette.bgdark    = { "#16171D", 233 }
     palette.bgdarker  = { "#121217", 232 }
 
     palette.selection = { "#2C2D35", 236 }
-    palette.subtle    = { "#23252F", 235 }
+    palette.subtle    = { "#363b49", 237 }
 
     vim.g["dracula#palette"] = palette
 

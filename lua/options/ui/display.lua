@@ -19,7 +19,7 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 
 -- character to show before the lines that have been wrapped
-vim.opt.showbreak = "↳ "
+vim.opt.showbreak = "⤷ "
 
 -- minimal number of columns to scroll horizontally
 vim.opt.sidescroll = 1
