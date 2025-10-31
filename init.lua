@@ -1,3 +1,3 @@
-local utils = require("utils.general")
+local utils = require("shared.utils")
 
-utils.require_recursively("options")
+utils.require_recursively("core")
