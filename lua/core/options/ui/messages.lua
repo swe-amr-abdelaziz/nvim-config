@@ -12,5 +12,17 @@ vim.opt.showmode = false
 -- don't show the ruler
 vim.opt.ruler = false
 
+-- pause listings when the screen is full
+vim.opt.more = false
+
 -- confirm to save changes before exiting modified buffer
 vim.opt.confirm = true
+
+-- ring the bell for error messages
+vim.opt.errorbells = false
+
+-- use a visual bell instead of beeping
+vim.opt.visualbell = false
+
+-- do not ring the bell for these reasons
+vim.opt.belloff = "all"

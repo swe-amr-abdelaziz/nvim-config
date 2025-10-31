@@ -23,6 +23,9 @@ vim.filetype.add({
   },
 })
 
+-- name of syntax highlighting used
+vim.opt.syntax = "on"
+
 -- highlight all matches for the last used search pattern
 vim.opt.hlsearch = true
 
@@ -36,7 +39,10 @@ vim.opt.cursorcolumn = false
 vim.opt.cursorline = true
 
 -- specifies which area 'cursorline' highlights
-vim.opt.cursorlineopt = "number"
+vim.opt.cursorlineopt = "both"
+
+-- columns to highlight
+vim.opt.colorcolumn = ""
 
 -- highlight spelling mistakes
 vim.opt.spell = false

@@ -19,13 +19,17 @@ vim.opt.linebreak = true
 vim.opt.breakindent = true
 
 -- character to show before the lines that have been wrapped
-vim.opt.showbreak = "↳ "
+vim.opt.showbreak = "⤷ "
 
 -- minimal number of columns to scroll horizontally
 vim.opt.sidescroll = 1
 
 -- minimum lines to keep left and right of the cursor when scrolling (when wrap is off)
 vim.opt.sidescrolloff = 16
+
+-- include "lastline" to show the last line even if it doesn't fit
+-- include "uhex" to show unprintable characters as a hex number
+vim.opt.display = 'lastline'
 
 -- characters to use for the status line, folds and filler lines
 vim.opt.fillchars = {
@@ -40,7 +44,7 @@ vim.opt.fillchars = {
 }
 
 -- number of lines used for the command-line
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 
 -- useful when executing macros.
 vim.opt.lazyredraw = true
@@ -50,7 +54,7 @@ vim.opt.list = true
 
 -- list of strings used for list mode
 vim.opt.listchars = {
-  tab = '»·',
+  tab = '» ',
   trail = '·',
   nbsp = '␣',
   extends = '⟩',

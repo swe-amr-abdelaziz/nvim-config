@@ -13,7 +13,7 @@ vim.opt.timeout = true
 vim.opt.ttimeout = true
 
 -- time to wait for a mapped sequence to complete (in milliseconds)
-vim.opt.timeoutlen = 1000
+vim.opt.timeoutlen = 300
 
 -- time to wait for a key code sequence to complete (in milliseconds)
 vim.opt.ttimeoutlen = 10

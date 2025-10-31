@@ -1,9 +1,9 @@
 ---- lazy.nvim plugin manager ----
 
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local lazypath = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy", "lazy.nvim")
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
-  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  local lazy_repo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazy_repo, lazypath })
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
@@ -17,10 +17,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- setup global mapleader before loading lazy.nvim
-require("options.editing.mapping")
+require("core.options.editing.mapping")
 
 require("lazy").setup({
-  spec = require("utils.general").lazy_imports_recursively("plugins"),
+  spec = require("shared.utils").lazy_imports_recursively("plugins"),
   install = {
     colorscheme = { "dracula", "retrobox" },
   },

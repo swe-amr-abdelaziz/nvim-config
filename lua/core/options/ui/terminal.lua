@@ -4,4 +4,4 @@
 vim.opt.title = true
 
 -- string to be used for the window title
-vim.opt.titlestring = "Neovim"
+vim.opt.titlestring = "%t %m (%{fnamemodify(getcwd(), ':t')}) - NVIM"
